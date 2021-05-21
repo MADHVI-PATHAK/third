@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lightbulb</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: blueviolet;
+            height: 100vh;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4rem;
+            font-weight: 400;
+        }
+        button{
+            display: inline-block;
+            margin: 0 200px 0 200px;
+            background-color: chartreuse;
+            border: 0;
+            border-radius: 10px;
+            padding: 12px 30px;
+            font-size: 16px;
+            transition: 400ms;
+            text-decoration: none;
+            cursor: pointer;
+            outline: navy;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: normal;
+            z-index: 100000;
+            padding: 10px;
+        
+        }
+        img{
+            margin-top: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb">
+        <h3>can you turn the light on?</h3>
+        <button onclick="document.getElementById('btn').src='lighton.png' ">Turn On</button>
+        <img src="lightoff.png" alt="light-off" id="btn">
+        <button onclick="document.getElementById('btn').src='lightoff.png'">Turn Off</button>
+    </div>
+</body>
+</html>
